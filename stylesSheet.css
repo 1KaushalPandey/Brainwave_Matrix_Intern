@@ -1,0 +1,93 @@
+.Kausal{
+	color: #FF4F33;}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #000000, #FF4F33);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+	-- color: #FF4F33;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.logo img {
+    height: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #444444;
+    border-radius: 5px;
+}
+
+.slider {
+    position: relative;
+    max-width: 100%;
+    height: 600px;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    animation: slide 80s infinite;
+}
+
+.slide {
+    width: 100%;
+    flex: 1 0 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: Auto;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+    margin: 5px 0;
+}
